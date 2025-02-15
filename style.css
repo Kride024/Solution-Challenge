@@ -94,7 +94,7 @@ box-shadow:var(--btn-box-shadow);
 }
 
 /*****navbar Section *****/ 
-.section-navbar{
+/* .section-navbar{
     width:100%;
     box-shadow:rgba(0,0,0,0.05)0px 6px 24px 0px ,
     rgba(0,0,0,0.08)0px 0px 0px 1px;
@@ -102,7 +102,7 @@ box-shadow:var(--btn-box-shadow);
     /* background: #fff; */
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 
-}
+/* }
 .section-navbar .container{
     display:flex;
     justify-content: space-between;
@@ -133,9 +133,71 @@ box-shadow:var(--btn-box-shadow);
    } 
    & li a:hover:after{
     width:100%;
-   }
- 
+   } */
+  /* */
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #1e3c72,navy);
+    padding: 15px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 55px;
+    width:50px;
+    margin-right: 10px;
+}
+.logo span {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    
+    letter-spacing: 2px;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+.nav-links li {
+    margin-left: 25px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.nav-links a:hover {
+    background-color:white;
+    opacity:0.5;
+    color: black;
+}
+.login-btn {
+    background-color: white;
+    color: #1e3c72;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.login-btn:hover {
+    background-color: #f4f4f4;
+    color: #2a5298;
 }
 /***** End navbar Section *****/
 label{
@@ -174,7 +236,7 @@ input,textarea{
 } */
 /***** End contact page Section *****/
 /***** Footer Section *****/ 
-footer{
+/* footer{
     background-color: var(--footer-bg-color);
     margin-top:-1rem;
 }
@@ -203,8 +265,8 @@ footer .grid{
     }
    } 
     & .fa-brands{
-        width:5rem;
-        aspect-ratio:1;
+        width:5rem; */
+        /* aspect-ratio:1;
         background-color:var(--supporting-color);
         color:var(--footer-bg-color);
         display:grid;
@@ -220,6 +282,99 @@ footer .grid{
    
        
 
+} */
+footer {
+  background-color: navy;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+  color: #bdbdbd;
+  cursor: pointer;
+}
+
+.footer-section ul li:hover {
+  color: #ffa500;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.newsletter button {
+  background-color: #20c997;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #e69500;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 40px;  /* Adjust size as needed */
+  height: 40px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  border-radius: 50%; /* Circular icons */
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #bdbdbd;
 }
 
 /***** End Footer Section *****/
@@ -457,3 +612,21 @@ input:focus-visible,textarea:focus-visible{
   background: #000;
 }
 /* extra properties */
+
+/* Course Div */
+.grid{
+  gap:6.4rem;
+}
+.course-div {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+ /* border-radius: 50%; */
+ transition:scale 0.3s linear  ;
+ & img{
+  width:100%;
+  height:auto;
+ }
+ &:hover
+{
+    scale:0.9;
+  }
+}
